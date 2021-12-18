@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+    <script>
+        function jumlah() {
+            
+            let x = document.getElementById('satu').value;
+            var y = document.getElementById('dua').value;
+            var total = parseInt(x) + parseInt(y);
+            document.getElementById('hasil').value = total;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1> Penjumlahan</h1>
+        <input type="text" name="nilaiSatu" id="satu" placeholder="Masukan Nilai"><br>
+        <p>+</p>
+        <input type="text" name="nilaiDua" id="dua" placeholder="Masukan Nilai"><br><br>
+        <input type="submit" onclick="jumlah()" value="Hasil"><br><br>
+        <input type="text" id="hasil" value="">
+    </div>
+</body>
+</html>
